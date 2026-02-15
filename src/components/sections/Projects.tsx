@@ -20,63 +20,58 @@ export const Projects = () => {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="group relative bg-white/5 rounded-[2rem] p-10 border border-white/10 overflow-hidden hover:bg-white/10 transition-colors duration-500"
+                        className="group relative bg-white/5 rounded-[2rem] p-10 border border-white/10 overflow-hidden hover:bg-white/10 transition-colors duration-500 flex items-center justify-center"
                     >
                         <div className="absolute top-0 right-0 p-10 opacity-20 transform translate-x-10 -translate-y-10 group-hover:scale-110 transition-transform duration-700">
                             <Star className="w-40 h-40" />
                         </div>
 
-                        <div className="relative z-10 h-full flex flex-col justify-between">
-                            <div>
-                                <h3 className="text-3xl font-bold mb-4">Intrusion Response System</h3>
-                                <p className="text-gray-400 text-lg leading-relaxed mb-8">
-                                    "Design and Implementation of an Intrusion Response System for Relational Databases"
-                                    on Data Mining in Java Platform.
-                                </p>
-                            </div>
-                            <div className="flex gap-2">
-                                <span className="px-4 py-2 bg-blue-500/20 text-blue-300 text-sm font-medium rounded-full">Java</span>
-                                <span className="px-4 py-2 bg-blue-500/20 text-blue-300 text-sm font-medium rounded-full">Data Mining</span>
-                            </div>
+                        <div className="relative z-10 text-center">
+                            <h3 className="text-2xl font-bold text-gray-500 mb-2">Coming Soon</h3>
+                            <p className="text-gray-600 text-sm">New project in the works...</p>
                         </div>
                     </motion.div>
 
                     <div className="space-y-8">
-                        <motion.div
-                            initial={{ opacity: 0, x: 20 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: 0.2 }}
-                            className="bg-[#0A0A0A] rounded-3xl p-8 border border-white/10 hover:border-blue-500/50 transition-colors group cursor-default"
-                        >
-                            <div className="flex gap-4 items-start">
-                                <div className="p-3 bg-yellow-500/10 rounded-xl text-yellow-500">
-                                    <Trophy className="w-6 h-6" />
+                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7376449023269908480/?rcm=ACoAAEJzb2gByD0h7K2hUGlSpNdodUHpug8iem4" target="_blank" rel="noopener noreferrer">
+                            <motion.div
+                                initial={{ opacity: 0, x: 20 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: 0.2 }}
+                                className="bg-[#0A0A0A] rounded-3xl p-8 border border-white/10 hover:border-blue-500/50 transition-colors group cursor-pointer"
+                            >
+                                <div className="flex gap-4 items-start">
+                                    <div className="p-3 bg-yellow-500/10 rounded-xl text-yellow-500">
+                                        <Trophy className="w-6 h-6" />
+                                    </div>
+                                    <div>
+                                        <h4 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">1st Place - InnoPitch</h4>
+                                        <p className="text-gray-400">Inter-collegiate fest organized by Kristu Jayanti University.</p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h4 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">1st Place - InnoPitch</h4>
-                                    <p className="text-gray-400">Inter-collegiate fest organized by Kristu Jayanti University.</p>
-                                </div>
-                            </div>
-                        </motion.div>
+                            </motion.div>
+                        </a>
 
-                        <motion.div
-                            initial={{ opacity: 0, x: 20 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: 0.3 }}
-                            className="bg-[#0A0A0A] rounded-3xl p-8 border border-white/10 hover:border-blue-500/50 transition-colors group cursor-default"
-                        >
-                            <div className="flex gap-4 items-start">
-                                <div className="p-3 bg-yellow-500/10 rounded-xl text-yellow-500">
-                                    <Trophy className="w-6 h-6" />
+                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7428127171472420864/?rcm=ACoAAEJzb2gByD0h7K2hUGlSpNdodUHpug8iem4" target="_blank" rel="noopener noreferrer">
+                            <motion.div
+                                initial={{ opacity: 0, x: 20 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: 0.3 }}
+                                className="bg-[#0A0A0A] rounded-3xl p-8 border border-white/10 hover:border-blue-500/50 transition-colors group cursor-pointer"
+                            >
+                                <div className="flex gap-4 items-start">
+                                    <div className="p-3 bg-yellow-500/10 rounded-xl text-yellow-500">
+                                        <Trophy className="w-6 h-6" />
+                                    </div>
+                                    <div>
+                                        <h4 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">1st Place - Innovation Mela</h4>
+                                        <p className="text-gray-400">Inter-college fest organized by CMR University and NASCOM foundation.</p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h4 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">1st Place - Innovation Mela</h4>
-                                    <p className="text-gray-400">Inter-college fest organized by CMR University and NASCOM foundation.</p>
-                                </div>
-                            </div>
-                        </motion.div>
+                            </motion.div>
+                        </a>
                     </div>
                 </div>
             </div>
