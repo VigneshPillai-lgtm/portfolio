@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin } from "lucide-react";
 
 export const Contact = () => {
     return (
         <section id="contact" className="py-24 px-6 bg-black border-t border-white/10">
-            <div className="max-w-4xl mx-auto text-center">
+            <div className="max-w-6xl mx-auto text-center">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -19,7 +19,7 @@ export const Contact = () => {
                     </p>
                 </motion.div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     <motion.a
                         href="mailto:24iota64@kristujayanti.com"
                         initial={{ opacity: 0, y: 20 }}
@@ -50,11 +50,28 @@ export const Contact = () => {
                         <p className="text-gray-400 text-sm">7219439555</p>
                     </motion.a>
 
-                    <motion.div
+                    <motion.a
+                        href="https://www.linkedin.com/in/vignesh-pillai-520446271/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BHuzNuaMsSHOgJtsJiwKaTg%3D%3D"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.3 }}
+                        className="flex flex-col items-center p-6 rounded-2xl bg-white/5 hover:bg-white/10 transition-colors group"
+                    >
+                        <div className="p-4 rounded-full bg-blue-600/10 text-blue-400 mb-4 group-hover:scale-110 transition-transform">
+                            <Linkedin className="w-6 h-6" />
+                        </div>
+                        <h3 className="text-lg font-semibold text-white mb-2">LinkedIn</h3>
+                        <p className="text-gray-400 text-sm">vignesh-pillai</p>
+                    </motion.a>
+
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.4 }}
                         className="flex flex-col items-center p-6 rounded-2xl bg-white/5 hover:bg-white/10 transition-colors group"
                     >
                         <div className="p-4 rounded-full bg-purple-500/10 text-purple-500 mb-4 group-hover:scale-110 transition-transform">
@@ -62,7 +79,7 @@ export const Contact = () => {
                         </div>
                         <h3 className="text-lg font-semibold text-white mb-2">Location</h3>
                         <p className="text-gray-400 text-sm max-w-[200px]">
-                            No 101 Sri vardhana Enclave, Bengaluru, 560084
+                            Bengaluru, 560084
                         </p>
                     </motion.div>
                 </div>
