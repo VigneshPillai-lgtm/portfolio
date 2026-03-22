@@ -9,7 +9,7 @@ import { Contact } from "./components/sections/Contact";
 
 function App() {
   return (
-    <main className="bg-black text-white min-h-screen font-sans selection:bg-blue-500/30">
+    <main className="bg-black text-white min-h-screen font-sans selection:bg-blue-500/30 overflow-x-hidden">
       <Navbar />
       <Hero />
       <Objective />
