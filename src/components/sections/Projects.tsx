@@ -67,7 +67,7 @@ export const Projects = () => {
                 <div className="mb-6 inline-block">
                   <motion.div
                     animate={{ rotate: 360 }}
-                    transition={{ duration: 20, repeat: Infinity, linear: true }}
+                    transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
                   >
                     <Star className="w-16 h-16 text-cyan-400" />
                   </motion.div>
