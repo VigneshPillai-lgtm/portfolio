@@ -84,7 +84,7 @@ export const Hero = () => {
         <motion.div
           variants={scrollVariants}
           animate="animate"
-          className="absolute bottom-8 left-1/2 -translate-x-1/2"
+          className="absolute bottom-2 left-1/2 -translate-x-1/2"
         >
           <div className="flex flex-col items-center gap-2">
             <span className="text-xs text-gray-400 uppercase tracking-widest">
